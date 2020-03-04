@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Standard Chat | stdchat.org</title>
+    <link rel="shortcut icon" href="../images/fav_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.0/css/bulma.css">
+    <link rel="stylesheet" type="text/css" href="css/landing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+    <script>
+        function burgerClicked(e) {
+            e.classList.toggle('is-active');
+            var etarget = document.getElementById(e.dataset.target);
+            if (etarget) {
+                etarget.classList.toggle('is-active');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <section class="hero is-info is-fullheight">
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" href="../">
+                            <img src="img/stdchat.png" alt="Logo">
+                        </a>
+                        <span class="navbar-burger burger" data-target="navbarMenu" onclick="burgerClicked(this)">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </div>
+                    <div id="navbarMenu" class="navbar-menu">
+                        <div class="navbar-end">
+                            <!--<span class="navbar-item">
+                                <a class="button is-white is-outlined" href="#">
+                                    <span class="icon">
+                                        <i class="fas fa-home"></i>
+                                    </span>
+                                    <span>Home</span>
+                                </a>
+                            </span>-->
+                            <!--<span class="navbar-item">
+                                <a class="button is-white is-outlined" href="#">
+                                    <span class="icon">
+                                        <i class="fa fa-book"></i>
+                                    </span>
+                                    <span>Documentation</span>
+                                </a>
+                            </span>-->
+                            <span class="navbar-item">
+                                <a class="button is-white is-outlined" href="https://github.com/stdchat">
+                                    <span class="icon">
+                                        <i class="fab fa-github"></i>
+                                    </span>
+                                    <span>Source</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="column is-6 is-offset-3">
+                    <h1 class="title">
+                        Coming Soon
+                    </h1>
+                    <h2 class="subtitle">
+                        Welcome to Standard Chat!
+                        Please be patient while we get things set up.
+                        For now, you can <a href="https://github.com/stdchat">check us out on github</a>.
+                    </h2>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>
